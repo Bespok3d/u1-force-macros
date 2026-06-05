@@ -1,0 +1,45 @@
+{
+  "name": "print-prefs-core",
+  "title": "Print Preferences Core",
+  "version": "0.1.1",
+  "description": "A small shared component the 'force' print-preference plugins build on. It lets Klipper apply a print preference (bed mesh, timelapse) once a print has already started, which Klipper normally refuses. You usually don't install this directly: it comes along automatically when you install a Force Bed Mesh or Force Timelapse plugin, and stays as long as one of them is installed. Updates Klipper's program files; uninstalling restores the originals. Snapmaker U1 only.",
+  "tagline": "Shared engine for the print-start 'force' options.",
+  "category": "printing",
+  "channel": "stable",
+  "printer_specific": true,
+  "published_at": "2026-04-05",
+  "updated_at": "2026-05-10",
+  "source": "https://github.com/bespok3d-org/plugin-print-prefs-core",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "print-prefs-force"
+    }
+  ],
+  "require": [],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "klipper-generic"
+    ],
+    "variables": []
+  },
+  "permissions": [
+    "klipper-source",
+    "restart"
+  ],
+  "install": {
+    "instrument": [
+      {
+        "class": "klipper-source",
+        "name": "extras/print_task_config.py",
+        "diff": "files/patches/force-guard.patch"
+      }
+    ],
+    "restart": [
+      "klipper"
+    ]
+  },
+  "conflict_resolutions": [],
+  "files": []
+}
