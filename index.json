@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "name": "U1 Force Macros",
+  "publisher": "PLACEHOLDER",
+  "updated": "2026-05-10",
+  "plugins": [
+    {
+      "name": "force-bed-mesh",
+      "title": "Force Bed Mesh",
+      "version": "0.1.1",
+      "description": "Forces a full bed mesh calibration before every print, even when the Snapmaker app would skip it, so the first layer sticks reliably on a freshly leveled bed. Pick this OR Force Adaptive Bed Mesh, not both. Snapmaker U1 only.",
+      "tagline": "Always run a full bed mesh before each print.",
+      "category": "printing",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-04-12",
+      "updated_at": "2026-04-28",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "force-bed-mesh"
+      ],
+      "conflicts": [
+        "force-bed-mesh-adaptive"
+      ],
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/439285753",
+      "deps": [
+        "print-prefs-core"
+      ]
+    },
+    {
+      "name": "force-bed-mesh-adaptive",
+      "title": "Force Adaptive Bed Mesh",
+      "version": "0.1.1",
+      "description": "Forces an adaptive bed mesh before every print: it probes only the part of the bed your model uses, so leveling is faster while still accurate where it matters. Falls back to a full mesh when your slicer hasn't sent object boundaries, so enable 'Exclude Object' in your slicer for the full benefit. Pick this OR Force Bed Mesh, not both. Snapmaker U1 only.",
+      "tagline": "Mesh just the area your model covers, before each print.",
+      "category": "printing",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-04-12",
+      "updated_at": "2026-04-28",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "force-bed-mesh-adaptive"
+      ],
+      "conflicts": [
+        "force-bed-mesh"
+      ],
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh-adaptive/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/439285733",
+      "deps": [
+        "print-prefs-core"
+      ]
+    },
+    {
+      "name": "force-timelapse",
+      "title": "Force Timelapse",
+      "version": "0.1.1",
+      "description": "Forces timelapse frame capture on every print, regardless of the Snapmaker app's timelapse setting. Your slicer must call TIMELAPSE_START, TIMELAPSE_TAKE_FRAME, and TIMELAPSE_STOP (most do when timelapse is enabled in the slicer). Pairs well with the Timelapse plugin for the Fluidd/Mainsail menu. Snapmaker U1 only.",
+      "tagline": "Capture a timelapse on every print, no app toggle needed.",
+      "category": "printing",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "force-timelapse"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-timelapse/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/439285785",
+      "deps": [
+        "print-prefs-core"
+      ]
+    },
+    {
+      "name": "print-prefs-core",
+      "title": "Print Preferences Core",
+      "version": "0.1.1",
+      "description": "A small shared component the 'force' print-preference plugins build on. It lets Klipper apply a print preference (bed mesh, timelapse) once a print has already started, which Klipper normally refuses. You usually don't install this directly: it comes along automatically when you install a Force Bed Mesh or Force Timelapse plugin, and stays as long as one of them is installed. Updates Klipper's program files; uninstalling restores the originals. Snapmaker U1 only.",
+      "tagline": "Shared engine for the print-start 'force' options.",
+      "category": "printing",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-04-05",
+      "updated_at": "2026-05-10",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "print-prefs-force"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/439285806",
+      "deps": []
+    }
+  ],
+  "lists": []
+}
