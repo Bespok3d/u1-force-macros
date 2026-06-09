@@ -28,7 +28,7 @@
         "force-bed-mesh-adaptive"
       ],
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/441697518",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/442576843",
       "deps": [
         "print-prefs-core"
       ]
@@ -57,7 +57,7 @@
         "force-bed-mesh"
       ],
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh-adaptive/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/441697504",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/442576817",
       "deps": [
         "print-prefs-core"
       ]
@@ -84,7 +84,7 @@
       ],
       "conflicts": [],
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-timelapse/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/441697527",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/442576866",
       "deps": [
         "print-prefs-core"
       ]
@@ -111,7 +111,7 @@
       ],
       "conflicts": [],
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/441697542",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/442576890",
       "deps": []
     }
   ],
