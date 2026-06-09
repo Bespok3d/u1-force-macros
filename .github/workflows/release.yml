@@ -74,7 +74,10 @@ jobs:
           MAIN_INDEX_TOKEN: ${{ secrets.MAIN_INDEX_TOKEN }}
         run: |
           repo_name="${GITHUB_REPOSITORY##*/}"
-          list_url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/index.json"
+          # github: ref (not a raw.githubusercontent URL): the app fetches sub-lists via the
+          # authenticated GitHub API, which works for private repos and public alike. Raw URLs
+          # 404 on private repos (they need an ephemeral per-user token the app cannot store).
+          list_url="github:${GITHUB_REPOSITORY}/index.json"
           git clone --depth 1 "https://x-access-token:${MAIN_INDEX_TOKEN}@github.com/Bespok3d/main-index.git" main-index
           mkdir -p main-index/lists
           printf '{\n  "name": "U1 Force Macros",\n  "url": "%s"\n}\n' "$list_url" \
