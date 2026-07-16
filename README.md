@@ -17,7 +17,6 @@ u1-force-macros/
     manifest.json
     files/              # payload the daemon places on the printer
     doc/README.md       # rendered in-app; not deployed
-  scripts/{pack.sh,generate-atom.mjs,assemble-list.mjs}
   .github/workflows/release.yml
   index.json            # the published sub-list (committed; referenced by main-index lists[])
   dist/                 # build output (gitignored)
@@ -28,17 +27,23 @@ command; the printer-side adapter realizes it. See `Bespok3d/doc/anatomy-of-a-pl
 
 ## Build locally
 
+Needs Node.js 20+. Builds run through the shared `Bespok3d/b3-builder` tool:
+
 ```sh
-sh scripts/pack.sh                            # -> dist/<name>-<ver>.b3 per plugin
-node scripts/generate-atom.mjs --plugin <id>  # -> dist/<id>.atom.json
-node scripts/assemble-list.mjs                # -> index.json from dist/*.atom.json
+npm install github:Bespok3d/b3-builder
+npx b3-builder build --source ./force-bed-mesh --atom-repo Bespok3d/u1-force-macros
+# -> dist/force-bed-mesh-<ver>.b3 + dist/force-bed-mesh.atom.json
 ```
+
+Drop `--source` to build every plugin in the repo at once.
 
 ## Releasing
 
-Bump a plugin's `manifest.json` `version` and push to `main`. CI packs each `.b3`, cuts a release
-per plugin, regenerates this repo's `index.json` sub-list, and registers it in `Bespok3d/main-index`
+Bump a plugin's `manifest.json` `version` and push to `main`. CI runs the `Bespok3d/b3-builder`
+Action over the whole repo, which packs each `.b3`, cuts a release per plugin, assembles this repo's
+`index.json` sub-list as `U1 Force Macros`, and registers it in `Bespok3d/main-index`
 (`lists/<repo>.json`). Secret: `MAIN_INDEX_TOKEN` (contents:write on main-index). Signing deferred.
+
 ## Maintainership
 
 These plugins are published and maintained by the Bespok3d org, and several of them repackage or
