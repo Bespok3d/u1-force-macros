@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "U1 Force Macros",
-  "publisher": "PLACEHOLDER",
+  "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
   "updated": "2026-05-10",
   "plugins": [
     {
@@ -12,7 +12,7 @@
       "tagline": "Always run a full bed mesh before each print.",
       "category": "printing",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-04-12",
       "updated_at": "2026-04-28",
@@ -29,7 +29,7 @@
       ],
       "changelog_url": "force-bed-mesh/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343200",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/484994652",
       "deps": [
         "print-prefs-core"
       ]
@@ -42,7 +42,7 @@
       "tagline": "Mesh just the area your model covers, before each print.",
       "category": "printing",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-04-12",
       "updated_at": "2026-04-28",
@@ -59,7 +59,7 @@
       ],
       "changelog_url": "force-bed-mesh-adaptive/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh-adaptive/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343173",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/484994624",
       "deps": [
         "print-prefs-core"
       ]
@@ -72,7 +72,7 @@
       "tagline": "Capture a timelapse on every print, no app toggle needed.",
       "category": "printing",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-04-18",
       "updated_at": "2026-04-18",
@@ -87,7 +87,7 @@
       "conflicts": [],
       "changelog_url": "force-timelapse/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-timelapse/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343235",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/484994674",
       "deps": [
         "print-prefs-core"
       ]
@@ -100,7 +100,7 @@
       "tagline": "Shared engine for the print-start 'force' options.",
       "category": "printing",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-04-05",
       "updated_at": "2026-05-10",
@@ -115,7 +115,7 @@
       "conflicts": [],
       "changelog_url": "print-prefs-core/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343259",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/484994705",
       "deps": []
     }
   ],
