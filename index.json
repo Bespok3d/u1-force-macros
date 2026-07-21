@@ -27,9 +27,9 @@
       "conflicts": [
         "force-bed-mesh-adaptive"
       ],
-      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/445086142",
       "changelog_url": "force-bed-mesh/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343200",
       "deps": [
         "print-prefs-core"
       ]
@@ -57,9 +57,9 @@
       "conflicts": [
         "force-bed-mesh"
       ],
-      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh-adaptive/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/445086107",
       "changelog_url": "force-bed-mesh-adaptive/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh-adaptive/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343173",
       "deps": [
         "print-prefs-core"
       ]
@@ -85,9 +85,9 @@
         "force-timelapse"
       ],
       "conflicts": [],
-      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-timelapse/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/445086171",
       "changelog_url": "force-timelapse/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-timelapse/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343235",
       "deps": [
         "print-prefs-core"
       ]
@@ -113,9 +113,9 @@
         "print-prefs-force"
       ],
       "conflicts": [],
-      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/445086184",
       "changelog_url": "print-prefs-core/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/481343259",
       "deps": []
     }
   ],
