@@ -2,6 +2,7 @@
   "name": "force-timelapse",
   "title": "Force Timelapse",
   "version": "0.1.1",
+  "author": "bespoked",
   "description": "Forces timelapse frame capture on every print, regardless of the Snapmaker app's timelapse setting. Your slicer must call TIMELAPSE_START, TIMELAPSE_TAKE_FRAME, and TIMELAPSE_STOP (most do when timelapse is enabled in the slicer). Pairs well with the Timelapse plugin for the Fluidd/Mainsail menu. Snapmaker U1 only.",
   "tagline": "Capture a timelapse on every print, no app toggle needed.",
   "category": "printing",

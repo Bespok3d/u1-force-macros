@@ -2,6 +2,7 @@
   "name": "force-bed-mesh",
   "title": "Force Bed Mesh",
   "version": "0.1.1",
+  "author": "bespoked",
   "description": "Forces a full bed mesh calibration before every print, even when the Snapmaker app would skip it, so the first layer sticks reliably on a freshly leveled bed. Pick this OR Force Adaptive Bed Mesh, not both. Snapmaker U1 only.",
   "tagline": "Always run a full bed mesh before each print.",
   "category": "printing",
