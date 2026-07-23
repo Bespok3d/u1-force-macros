@@ -16,6 +16,7 @@
       "printer_specific": true,
       "published_at": "2026-04-12",
       "updated_at": "2026-04-28",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -29,7 +30,7 @@
       ],
       "changelog_url": "force-bed-mesh/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/486461350",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/487124422",
       "deps": [
         "print-prefs-core"
       ]
@@ -46,6 +47,7 @@
       "printer_specific": true,
       "published_at": "2026-04-12",
       "updated_at": "2026-04-28",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -59,7 +61,7 @@
       ],
       "changelog_url": "force-bed-mesh-adaptive/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-bed-mesh-adaptive/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/486461335",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/487124414",
       "deps": [
         "print-prefs-core"
       ]
@@ -76,6 +78,7 @@
       "printer_specific": true,
       "published_at": "2026-04-18",
       "updated_at": "2026-04-18",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -87,7 +90,7 @@
       "conflicts": [],
       "changelog_url": "force-timelapse/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/force-timelapse/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/486461376",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/487124449",
       "deps": [
         "print-prefs-core"
       ]
@@ -104,6 +107,7 @@
       "printer_specific": true,
       "published_at": "2026-04-05",
       "updated_at": "2026-05-10",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -115,7 +119,7 @@
       "conflicts": [],
       "changelog_url": "print-prefs-core/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/486461396",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-force-macros/releases/assets/487124478",
       "deps": []
     }
   ],
