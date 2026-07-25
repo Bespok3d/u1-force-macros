@@ -23,7 +23,7 @@ u1-force-macros/
 ```
 
 Each plugin declares WHAT (a destination `class` + a `restart` hook), never a path or a raw
-command; the printer-side adapter realizes it. See `Bespok3d/doc/anatomy-of-a-plugin.md`.
+command; the printer-side adapter realizes it.
 
 ## Build locally
 
