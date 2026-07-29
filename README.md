@@ -1,5 +1,10 @@
 # u1-force-macros
 
+[![licence](https://img.shields.io/badge/licence-GPL--3.0-blue)](LICENSE)
+[![release](https://img.shields.io/github/v/release/Bespok3d/u1-force-macros)](https://github.com/Bespok3d/u1-force-macros/releases)
+![printer](https://img.shields.io/badge/printer-Snapmaker%20U1-informational)
+![stock firmware](https://img.shields.io/badge/stock%20firmware-no%20flashing-brightgreen)
+
 A co-repo of Bespok3d plugins for the Snapmaker U1 that publishes its own sub-list.
 
 Plugins:
