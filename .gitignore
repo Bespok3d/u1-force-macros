@@ -1,3 +1,6 @@
 # Build outputs, never committed. The published sub-list (index.json at the repo root) IS committed.
 dist/
 .DS_Store
+__pycache__/
+# A test's own dependency, installed by the gate. Declared in tests/requirements.txt, never committed.
+*/tests/.deps/

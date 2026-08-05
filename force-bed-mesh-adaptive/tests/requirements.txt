@@ -1,0 +1,4 @@
+# The plugin ships a Klipper gcode_macro, which is a Jinja2 template. Rendering it the way Klipper
+# renders it is the only way to test what the macro actually sends, so the test layer needs Jinja2.
+# The printer already has it: Klipper depends on it. Nothing here is installed onto the printer.
+jinja2>=3.0
