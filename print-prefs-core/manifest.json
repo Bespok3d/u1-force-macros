@@ -43,5 +43,7 @@
     ]
   },
   "conflict_resolutions": [],
-  "files": []
+  "files": [],
+  "license": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/LICENSE",
+  "attributions": "# Attributions - print-prefs-core\n\n**Plugin author:** paxx12 (Extended Firmware overlay `36-feature-print-preferences`), packaged by Bespok3d\n\nThe shared print-preference switches the force macros build on.\n\n| Upstream project | Author | Licence | Needed at runtime | Code ships in this package |\n| --- | --- | --- | --- | --- |\n| Extended Firmware overlay `36-feature-print-preferences` | paxx12 | GPL-3.0 | no | yes |\n\nThe patch in this package, `patches/force-guard.patch`, is the patch from the Extended Firmware overlay\n`36-feature-print-preferences` (paxx12), GPL-3.0. It ships here unchanged, byte for byte.\n"
 }
