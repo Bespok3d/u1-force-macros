@@ -11,7 +11,7 @@
   "changelog": "doc/CHANGELOG.md",
   "published_at": "2026-04-05",
   "updated_at": "2026-05-10",
-  "source": "https://github.com/bespok3d-org/plugin-print-prefs-core",
+  "source": "https://github.com/Bespok3d/u1-force-macros",
   "publisher": "PLACEHOLDER",
   "provides": [
     {
