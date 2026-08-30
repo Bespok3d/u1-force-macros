@@ -45,6 +45,9 @@ run_check "ruff (force-bed-mesh-adaptive)"   ruff_in_dir "$REPO_ROOT/force-bed-m
 
 unset PYTHONPATH
 
+run_check "pytest (print-prefs-core)" pytest_in_dir "$REPO_ROOT/print-prefs-core" tests
+run_check "ruff (print-prefs-core)"   ruff_in_dir "$REPO_ROOT/print-prefs-core" tests files/extras
+
 release_trigger_check "$REPO_ROOT"
 manifest_origin_check "$REPO_ROOT"
 workflow_pinning_check "$REPO_ROOT"

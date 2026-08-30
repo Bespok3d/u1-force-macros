@@ -1,16 +1,17 @@
 {
   "name": "print-prefs-core",
   "title": "Print Preferences Core",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "bespoked",
-  "description": "A small shared component the 'force' print-preference plugins build on. It lets Klipper apply a print preference (bed mesh, timelapse) once a print has already started, which Klipper normally refuses. You usually don't install this directly: it comes along automatically when you install a Force Bed Mesh or Force Timelapse plugin, and stays as long as one of them is installed. Updates Klipper's program files; uninstalling restores the originals. Snapmaker U1 only.",
+  "description": "A small shared component the 'force' print-preference plugins build on. It lets Klipper apply a print preference (bed mesh, timelapse) once a print has already started, which Klipper normally refuses. You usually don't install this directly: it comes along automatically when you install a Force Bed Mesh or Force Timelapse plugin, and stays as long as one of them is installed. Snapmaker U1 only.",
   "tagline": "Shared engine for the print-start 'force' options.",
   "category": "printing",
   "channel": "stable",
   "printer_specific": true,
+  "min_daemon_version": "0.14.0",
   "changelog": "doc/CHANGELOG.md",
   "published_at": "2026-04-05",
-  "updated_at": "2026-05-10",
+  "updated_at": "2026-08-24",
   "source": "https://github.com/Bespok3d/u1-force-macros",
   "publisher": "PLACEHOLDER",
   "provides": [
@@ -18,7 +19,12 @@
       "service": "print-prefs-force"
     }
   ],
-  "require": [],
+  "require": [
+    {
+      "service": "u1-base-print-task-config",
+      "cardinality": "one"
+    }
+  ],
   "conflicts": [],
   "requires": {
     "capabilities": [
@@ -27,15 +33,19 @@
     "variables": []
   },
   "permissions": [
-    "klipper-source",
+    "klipper-extra",
+    "klipper-config",
     "restart"
   ],
   "install": {
-    "instrument": [
+    "place": [
       {
-        "class": "klipper-source",
-        "name": "extras/print_task_config.py",
-        "diff": "files/patches/force-guard.patch"
+        "class": "klipper-extra",
+        "src": "files/extras/print_prefs_force.py"
+      },
+      {
+        "class": "klipper-config",
+        "src": "files/cfg/klipper/print-prefs-force.cfg"
       }
     ],
     "restart": [
@@ -45,5 +55,5 @@
   "conflict_resolutions": [],
   "files": [],
   "license": "https://github.com/Bespok3d/u1-force-macros/blob/main/print-prefs-core/doc/LICENSE",
-  "attributions": "# Attributions - print-prefs-core\n\n**Plugin author:** paxx12 (Extended Firmware overlay `36-feature-print-preferences`), packaged by Bespok3d\n\nThe shared print-preference switches the force macros build on.\n\n| Upstream project | Author | Licence | Needed at runtime | Code ships in this package |\n| --- | --- | --- | --- | --- |\n| Extended Firmware overlay `36-feature-print-preferences` | paxx12 | GPL-3.0 | no | yes |\n\nThe patch in this package, `patches/force-guard.patch`, is the patch from the Extended Firmware overlay\n`36-feature-print-preferences` (paxx12), GPL-3.0. It ships here unchanged, byte for byte.\n"
+  "attributions": "# Attributions\n\nThis plugin ships its own Klipper extra and its own config section. It contains no code taken from\nanother project.\n\nThe change to Snapmaker's `print_task_config.py` that makes `FORCE=1` mean something now lives in\nthe base-layer plugin `u1-base-print-task-config`, which this plugin requires. The credit for the\noriginal FORCE guard, paxx12's Extended Firmware overlay `36-feature-print-preferences` (GPL-3.0),\ntravels with that change and is recorded there.\n"
 }
