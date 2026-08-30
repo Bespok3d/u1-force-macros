@@ -5,8 +5,8 @@ A small core dependency that makes the U1's `SET_PRINT_PREFERENCES` usable mid-p
 
 ## What it does
 
-- Patches Klipper's `print_task_config.py` to add a `FORCE` guard, so
-  `SET_PRINT_PREFERENCES ... FORCE=1` takes effect even while a print is running.
+- Makes `SET_PRINT_PREFERENCES ... FORCE=1` take effect even while a print is running, which
+  the printer otherwise refuses.
 
 ## Do you need it?
 
@@ -16,5 +16,5 @@ Force Timelapse plugins) pull it in automatically as a dependency.
 ## Notes
 
 - Restarts Klipper on install.
-- Patches Klipper source; reverted on uninstall and re-applied after an OTA firmware update.
+- Needs the `u1-base-print-task-config` base plugin, which is installed alongside it.
 - Snapmaker U1.
