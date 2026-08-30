@@ -11,9 +11,14 @@
   "min_daemon_version": "0.14.0",
   "changelog": "doc/CHANGELOG.md",
   "published_at": "2026-04-05",
-  "updated_at": "2026-08-24",
+  "updated_at": "2026-08-30",
   "source": "https://github.com/Bespok3d/u1-force-macros",
   "publisher": "PLACEHOLDER",
+  "migration": {
+    "until_version": "0.1.2",
+    "requires_daemon": "0.14.0",
+    "summary": "Print Preferences Core used to change your printer's Klipper files itself. From 0.1.2 the printer's base layer does that work instead, so this update also puts on the base layer plugin that now holds that file. Your Force Bed Mesh and Force Timelapse options keep working as they did."
+  },
   "provides": [
     {
       "service": "print-prefs-force"
