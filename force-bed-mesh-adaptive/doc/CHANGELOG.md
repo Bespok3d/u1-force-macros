@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+
+- Shows the licence and the credits for the work this plugin builds on, and its source link now
+  opens the right place.
+
 ## 0.1.2
 
 - Forces the adaptive mesh even when the slicer explicitly asks for a full one. OrcaSlicer's stock
