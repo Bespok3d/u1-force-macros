@@ -1,7 +1,7 @@
 {
   "name": "force-bed-mesh-adaptive",
   "title": "Force Adaptive Bed Mesh",
-  "version": "0.1.3",
+  "version": "0.1.3-pre",
   "author": "bespoked",
   "description": "Forces an adaptive bed mesh before every print: it probes only the part of the bed your model uses, so leveling is faster while still accurate where it matters. It overrides a slicer that asks for a full mesh, and tells you when a file carries no object outline and the whole bed has to be probed. Pick this OR Force Bed Mesh, not both. Snapmaker U1 only.",
   "tagline": "Mesh just the area your model covers, before each print.",
