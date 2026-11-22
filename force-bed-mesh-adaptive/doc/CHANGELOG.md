@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4
+
+- A bed mesh you start by hand, outside a print, probes the whole bed again. It used to shrink to
+  the spot where the last printed model sat.
+
 ## 0.1.3
 
 - Shows the licence and the credits for the work this plugin builds on, and its source link now

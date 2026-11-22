@@ -9,6 +9,7 @@ import configparser
 from pathlib import Path
 
 import jinja2
+import pytest
 
 MACRO_SECTION = "gcode_macro BED_MESH_CALIBRATE"
 MACRO_CFG = (
@@ -111,3 +112,26 @@ def test_the_bed_level_preference_is_forced_only_while_a_print_is_running():
     )
     assert "SET_PRINT_PREFERENCES BED_LEVEL=1 FORCE=1" in printing
     assert "SET_PRINT_PREFERENCES BED_LEVEL=1 FORCE=1" not in idle
+
+
+@pytest.mark.parametrize("print_state", ["complete", "cancelled", "error", "standby"])
+def test_a_mesh_run_by_hand_after_a_print_probes_the_whole_bed(print_state):
+    # Klipper keeps the finished print's object outlines, so forcing ADAPTIVE=1 here shrank a bed
+    # check to the patch where the last model sat.
+    emitted, _ = render_macro("", labelled_objects=A_LABELLED_OBJECT, print_state=print_state)
+    assert "ADAPTIVE" not in calibrate_arguments(emitted)
+
+
+def test_a_mesh_run_by_hand_keeps_its_own_arguments():
+    emitted, _ = render_macro("PROBE_COUNT=7,7 ADAPTIVE=0", print_state="standby")
+    assert calibrate_arguments(emitted) == {"PROBE_COUNT": "7,7", "ADAPTIVE": "0"}
+
+
+def test_a_mesh_run_by_hand_says_nothing_about_object_outlines():
+    _, announcements = render_macro("", labelled_objects=[], print_state="standby")
+    assert announcements == []
+
+
+def test_a_paused_print_is_still_forced():
+    emitted, _ = render_macro("", labelled_objects=A_LABELLED_OBJECT, print_state="paused")
+    assert calibrate_arguments(emitted)["ADAPTIVE"] == "1"

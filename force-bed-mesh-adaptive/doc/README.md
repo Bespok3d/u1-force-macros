@@ -21,5 +21,6 @@ objects actually cover, so leveling is faster than a full mesh.
 ## Notes
 
 - Conflicts with **Force Bed Mesh** (the full-mesh version): pick one.
-- To probe the whole bed on purpose, run `_BED_MESH_CALIBRATE_BASE` in the console.
+- Outside a print, `BED_MESH_CALIBRATE` works as stock: run by hand, it probes the whole bed.
+- During a print, run `_BED_MESH_CALIBRATE_BASE` in the console to probe the whole bed on purpose.
 - Restarts Klipper on install. Snapmaker U1.
